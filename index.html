@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <title>Assignment website</title>
+</head>
+
+<body>
+    <div class="main">
+      <a id="button3"></a>
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="#home1">
+          <span class="icon"><i class="fa-solid fa-house"></i></span>
+          <span class="title">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <span class="icon"><i class="fa-solid fa-user"></i></span>
+          <span class="title">Contact</span>
+        </a>
+      </li>
+      <li>
+        <a href="#about1">
+          <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+          <span class="title">Info</span>
+        </a>
+      </li>
+      <li>
+        <a href="#guide">
+          <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+          <span class="title">Guide</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="landing" id="landing">
+    <div class="words word-1">
+      <span>W</span>
+      <span>E</span>
+      <span>L</span>
+      <span>C</span>
+      <span>O</span>
+      <span>M</span>
+      <span>E</span>
+    </div>
+    
+    <div class="words word-2">
+      <span>T</span>
+      <span>O</span>
+    </div>
+    
+    <div class="words word-3">
+      <span>J</span>
+      <span>O</span>
+      <span>B</span>
+      <span>F</span>
+      <span>R</span>
+      <span>E</span>
+      <span>A</span>
+      <span>K</span>
+    </div>
+  </div>
+  <div class="home" id="home1">
+    <section class="section-one"> 
+      <div class="container">
+        <h1>Home Page</h1>
+        <p>This is the home page of the site</p>
+        <!-- <a href="#about1" class="home-button">Read More</a> -->
+      </div>  
+    </section> 
+  </div>
+  <!-- contact section -->
+  <div class="cont">
+    <section id="contact">
+      <div class="contact-box">
+        <div class="contact-links">
+          <h2>CONTACT</h2>
+          <div class="links">
+            <div class="link">
+              <a><img class="images" src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+            </div>
+            <div class="link">
+              <a><img class="images" src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+            </div>
+            <!-- <div class="link">
+              <a><img class="images" src="https://i.postimg.cc/W4Znvrry/instagram.png" alt="codepen"></a>
+            </div> -->
+            <div class="link">
+              <a><img class="images" src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form>
+            <div class="form-item">
+              <input type="text" name="sender" required>
+              <label>Name:</label>
+            </div>
+            <div class="form-item">
+              <input type="text" name="email" required>
+              <label>Email:</label>
+            </div>
+            <div class="form-item">
+              <textarea class="" name="message" required></textarea>
+              <label>Message:</label>
+            </div>
+            <button class="submit-btn">Send</button>  
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- about section begins -->
+  <div class="about1" id="about1">
+    <div class="about-section">
+      <div class="inner-container">
+        <h1>About Us</h1>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+        </p>
+        <div class="skills">
+          <span>heading 1</span>
+          <span>heading 2</span>
+          <span>heading 3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="guide" id="guide">
+    <div class=thankyoucontent>
+      <div class="wrapper-1">
+         <div class="wrapper-2">
+            <img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" alt="thank-you-envelope" border="0">
+          <h1>Thank you!</h1>
+           <p>This page will serve as a Guide Page </p> 
+           <p>Due to lack of information, this space is left empty</p>
+           <!-- <button class="go-home"><a class="last-link" href="#landing"> -->
+             <!-- Back to top</a> -->
+           <!-- </button> -->
+         </div>   
+  </div>
+  <div class="toggle" onclick="toggleMenu()"></div>
+  </div>
+  <script type="text/javascript">
+    function toggleMenu() {
+      let navigation = document.querySelector('.navigation');
+      let toggle = document.querySelector('.toggle');
+      navigation.classList.toggle('active');
+      toggle.classList.toggle('active');
+    }
+    var btn = $('#button3');
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+      } 
+      else {
+        btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+  </script>
+</body>
+
+</html>
